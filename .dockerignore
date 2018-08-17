@@ -14,5 +14,3 @@ volumes
 
 docker-compose.yml
 .idea
-vendor
-tmp
