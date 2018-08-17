@@ -1,24 +1,31 @@
-# README
+# GEOCODING
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project using API to get latitude and longitude for an address.
 
-Things you may want to cover:
+## Configuring the project
 
-* Ruby version
+### Configuring with Docker
 
-* System dependencies
+For this project, I'm using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/).
+Please check official installation instructions.
 
-* Configuration
+Create your docker-compose.yml file:
+````
+cp -v docker-compose.example.yml docker-compose.yml
+````
 
-* Database creation
+Start Docker:
+````
+docker-compose up
+````
 
-* Database initialization
+### Configuring in a local environment
+You can run this application in a local environment using your custom environment configs.
 
-* How to run the test suite
+## Using
 
-* Services (job queues, cache servers, search engines, etc.)
+### Authentication
 
-* Deployment instructions
+### Consuming the API
 
-* ...
+### Contributing
