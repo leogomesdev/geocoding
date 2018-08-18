@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: postgres_db
+  username: postgres
+  password:
+  pool: 5
+
+development:
+  <<: *default
+  database: geocoding_development
+
+
+test:
+  <<: *default
+  database: geocoding_test
