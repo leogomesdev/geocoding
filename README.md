@@ -5,10 +5,13 @@ This is a project using API to get latitude and longitude for an address.
 ## Configuring the project
 
 - Using postgres, create the databases geocoding and geocoding_test.
-
 - Create your database configs by copying and editing the file bellow:
     ````
     cp -v config/database.example.yml config/database.yml
+    ````
+- Run project migrations
+    ````
+    rake db:migrate
     ````
 
 ### Configuring with Docker
@@ -18,6 +21,12 @@ If you wanna to use [Docker](https://www.docker.com/) for a local executation, p
 
 ### Configuring in a local environment
 You can run this application in a local environment using your custom environment configs.
+
+## Running tests
+
+````
+rails test
+````
 
 ## Design
 
