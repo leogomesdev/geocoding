@@ -1,0 +1,69 @@
+{
+	"variables": [],
+	"info": {
+		"name": "geocoding",
+		"_postman_id": "69c9ed16-82f9-0805-b2a4-70c460cf4ed9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get location",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/v1/geocoding?query_name=\"checkpoint charlie\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"geocoding"
+					],
+					"query": [
+						{
+							"key": "query_name",
+							"value": "\"checkpoint charlie\"",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token token=9c954067b27a1b06114dedca46903a19",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new user",
+			"request": {
+				"url": "http://localhost:3000//api/v1/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"user\": { \"name\" : \"Leonardo Gomes da Silva\"\n}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

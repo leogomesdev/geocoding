@@ -23,6 +23,7 @@ volumes
 /config/master.key
 
 
+database.yml
 docker-compose.yml
 .idea
 vendor
