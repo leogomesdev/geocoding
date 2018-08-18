@@ -47,5 +47,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Geocoder
 gem 'geocoder'
 
-# Responde APIs beautiful
+# Responding APIs beautiful
 gem 'active_model_serializers', '~> 0.10.0'
+
+# Configure Cross-Origin Resource Sharing
+gem 'rack-cors'
+
+# Prevents from racker attacks
+gem 'rack-attack'
