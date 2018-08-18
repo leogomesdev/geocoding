@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   before_create -> {self.token = generate_token}
+  validates_presence_of :name
 
   private
 
